@@ -7,36 +7,98 @@
   <title>IVANOV</title>
   <link href="https://fonts.googleapis.com/css?family=Catamaran|Cormorant+Garamond" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+  <script>
+  $(function() {
+    $( ".expand" ).accordion({
+      heightStyle:"content",
+      active: false,
+      collapsible: true,
+      header:"div.accordion-header"
+    });
+  });
+  </script>
 </head>
 <body>
   <header>
     <a href="index.html" class="header-brand">Ivanov</a>
     <nav>
       <ul>
-        <li><a href="index.html">Portfolio</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      <a href="#projects-link" class="header-projects">Projects</a>
+      <a href="#project" class="header-projects">Projects</a>
 
     </nav>
   </header>
   <main>
       <section class="index-banner">
         <div class="vertical-center">
-          <h2>I AM A FREELANCE WEB<br>DEVELOPER</h2>
+          <h2>I AM A <br> WEB<br>DEVELOPER</h2>
           <h1>with speciality in front-end development</h1>
         </div>
       </section>
-        <div class="wrapper">
-          <section>
+      <!--     ABOUT_SECTION        -->
+        <div class="wrapper" >
+          <div id="about" class="expand">
+<!--  **********  ABOUT ME ********************-->
+              <div class="accordion-header">
+                <h3>About me</h3>
+              </div>
+              <div class="accordion-body">
+                <p>Some content Some content Some content Some content </p>
+              </div>
+<!-- *************   Skills   ******************   -->
+              <div class="accordion-header">
+                <h3>Skills</h3>
+              </div>
+              <div class="accordion-body">
 
-          </section>
-          <section id="projects-link" class="projects-links">
+                <ul> <dl>Thinks i enjoy:</dl>
+                  <li>HTML</li>
+                  <li>Bootstrap</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Jquery</li>
+                </ul>
+              </div>
+<!--   ******************  Toools   ****************** -->
+              <div class="accordion-header">
+                <h3>Tools</h3>
+              </div>
+              <div class="accordion-body">
+                <ul> <dl>I work with:</dl>
+                  <li>Atom</li>
+                  <li>Developer tool</li>
+                  <li>Codepen</li>
+                  <li>Photoshop</li>
+                  <li>Wordpress</li>
+                  <li>Github</li>
+                  <li>Xammpp</li>
+                </ul>
+              </div>
+<!--   ******************  Basic/learning   ****************** -->
+<div class="accordion-header">
+  <h3>Basic/Learning:</h3>
+</div>
+<div class="accordion-body">
+  <ul><dl>Basic/learning</dl>
+    <li>php</li>
+    <li>mySQL</li>
+  </ul>
+</div>
+
+        </div>
+<!--      Projects_section        -->
+          <section id="project" class="projects-links">
           <a href="#">
             <div class="index-box-project-square">
+              <a href="https://codepen.io/dyakoivanov/full/rvrLez/">
               <h3>Project</h3>
+              </a>
             </div>
           </a>
           <a href="#">
@@ -64,14 +126,11 @@
             <h3>Project</h3>
             </div>
           </a>
-
-          </section>
-
-          <section id="about" class="">
 
           </section>
         </div>
       </main>
+      <!--         Footer_Section-->
     <div class="wrapper">
       <footer>
         <ul class="footer-links-main">

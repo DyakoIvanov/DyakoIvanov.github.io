@@ -158,6 +158,50 @@ header .header-projects {
   text-align: center;
   text-shadow: 2px 2px 8px #111;
 }
+/*About me section*/
+.accordion-header {
+  margin: 16px 16px 0;
+  width: calc(100% -32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+.accordion-header h3{
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+.accordion-body{
+	  margin: 0px 16px 0;
+	  width: calc(100% -32px);
+	  height: auto;
+	  background-color: #f2f2f2;
+		text-align: center;
+}
+.accordion-body dl{
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-family: Catamaran;
+		font-weight: 1000;
+		padding:5px 0;
+}
+.accordion-body ul li{
+		padding:5px 0:
+}
+
+/*
+.accordion-body ul li{
+	  font-family: Garamond;
+	  font-size: 28px;
+	  font-weight: 600;
+	  color: #111;
+	  text-align: center;
+}
+*/
+/*Projects Section*/
 .projects-links div{
   margin: 16px 16px 0;
   width: calc(100% -32px);
@@ -180,7 +224,7 @@ header .header-projects {
 		margin: 0 auto;
 	}
 	.index-banner {
-	  height: 450px;
+	  height: 100vh;
 	}
 	.index-banner h1{
 	  display: block;
