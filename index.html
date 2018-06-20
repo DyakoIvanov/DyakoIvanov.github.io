@@ -7,18 +7,40 @@
   <title>IVANOV</title>
   <link href="https://fonts.googleapis.com/css?family=Catamaran|Cormorant+Garamond" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <script>
-  $(function() {
-    $( ".expand" ).accordion({
-      heightStyle:"content",
-      active: false,
-      collapsible: true,
-      header:"div.accordion-header"
-    });
-  });
+  var w = $(window).width();
+  if ( w < 1000) {
+    console.log("window width less than 1000");
+    $(function() {
+        $( ".expand" ).accordion({
+          heightStyle:"content",
+          active: false,
+          collapsible: true,
+          header:"div.accordion-header"
+        });
+      });
+  }
+  $(window).resize(function() {
+        location.reload();
+});
+
+
+// $(function() {
+//     $( ".expand" ).accordion({
+//       heightStyle:"content",
+//       active: false,
+//       collapsible: true,
+//       header:"div.accordion-header"
+//     });
+//   });
+
   </script>
 </head>
 <body>
@@ -43,29 +65,32 @@
       </section>
       <!--     ABOUT_SECTION        -->
         <div class="wrapper" >
-          <div id="about" class="expand">
-<!--  **********  ABOUT ME ********************-->
-              <div class="accordion-header">
-                <h3>About me</h3>
-              </div>
-              <div class="accordion-body">
-                <p>Some content Some content Some content Some content </p>
-              </div>
-<!-- *************   Skills   ******************   -->
-              <div class="accordion-header">
-                <h3>Skills</h3>
-              </div>
-              <div class="accordion-body">
 
-                <ul> <dl>Thinks i enjoy:</dl>
-                  <li>HTML</li>
-                  <li>Bootstrap</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                  <li>Jquery</li>
-                </ul>
-              </div>
+          <div id="about" class="expand">
+                <div class="accordion-header">
+                  <h3>About me</h3>
+                </div>
+                <div class="accordion-body">
+                  <p>This is filler text until I figure out what I want to do here.<br> This is an introductory paragraph to myself.<br> Try to summarize stuff. </p>
+                </div>
+<!-- *************   Skills   ******************   -->
+            <div class="about-square">
+                <div class="accordion-header">
+                  <h3>Skills</h3>
+                </div>
+                <div class="accordion-body">
+
+                  <ul> <dl>Thinks i enjoy:</dl>
+                    <li>HTML</li>
+                    <li>Bootstrap</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Jquery</li>
+                  </ul>
+                </div>
+            </div>
 <!--   ******************  Toools   ****************** -->
+            <div class="about-square">
               <div class="accordion-header">
                 <h3>Tools</h3>
               </div>
@@ -75,22 +100,24 @@
                   <li>Developer tool</li>
                   <li>Codepen</li>
                   <li>Photoshop</li>
-                  <li>Wordpress</li>
                   <li>Github</li>
                   <li>Xammpp</li>
                 </ul>
               </div>
+            </div>
 <!--   ******************  Basic/learning   ****************** -->
-<div class="accordion-header">
-  <h3>Basic/Learning:</h3>
-</div>
-<div class="accordion-body">
-  <ul><dl>Basic/learning</dl>
-    <li>php</li>
-    <li>mySQL</li>
-  </ul>
-</div>
-
+          <div class="about-square">
+              <div class="accordion-header">
+                  <h3>Basic/Learning:</h3>
+              </div>
+              <div class="accordion-body">
+                  <ul><dl>Basic/learning</dl>
+                    <li>Wordpress</li>
+                    <li>php</li>
+                    <li>mySQL</li>
+                  </ul>
+              </div>
+            </div>
         </div>
 <!--      Projects_section        -->
           <section id="project" class="projects-links">
@@ -112,17 +139,17 @@
             </div>
           </a>
           <a href="#">
+            <div class="index-box-project-square">
+            <h3>Project</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div class="index-box-project-square">
+            <h3>Project</h3>
+            </div>
+          </a>
+          <a href="#">
             <div class="index-box-project-rectangle">
-            <h3>Project</h3>
-            </div>
-          </a>
-          <a href="#">
-            <div class="index-box-project-square">
-            <h3>Project</h3>
-            </div>
-          </a>
-          <a href="#">
-            <div class="index-box-project-square">
             <h3>Project</h3>
             </div>
           </a>

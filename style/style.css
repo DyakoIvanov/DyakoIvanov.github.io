@@ -176,10 +176,16 @@ header .header-projects {
 }
 .accordion-body{
 	  margin: 0px 16px 0;
+		padding: 10px 0;
 	  width: calc(100% -32px);
 	  height: auto;
 	  background-color: #f2f2f2;
 		text-align: center;
+}
+.accordion-body p{
+	  font-family: Catamaran;
+		font-weight: 500;
+		line-height: 30px;
 }
 .accordion-body dl{
 		text-transform: uppercase;
@@ -191,16 +197,25 @@ header .header-projects {
 .accordion-body ul li{
 		padding:5px 0:
 }
-
-/*
-.accordion-body ul li{
-	  font-family: Garamond;
-	  font-size: 28px;
-	  font-weight: 600;
-	  color: #111;
-	  text-align: center;
+/*    ---------  ABOUT SECTION MEDIA -------------*/
+@media only screen and (min-width: 1000px) {
+.about-square{
+	display: inline-grid;
+	width: 33%;
+	padding-top: 10px;
+	height: 150px;
 }
-*/
+.accordion-header{
+	display: none;
+}
+.accordion-body{
+	height: auto;
+}
+.accordion-body p {
+	height: 100px;
+}
+}
+
 /*Projects Section*/
 .projects-links div{
   margin: 16px 16px 0;
