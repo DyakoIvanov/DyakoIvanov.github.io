@@ -233,6 +233,15 @@ header .header-projects {
   text-align: center;
   text-transform: uppercase;
 }
+
+.available:hover{
+	background-color: green;
+	opacity: 0.5;
+}
+.unavailable:hover{
+	background-color: red;
+	opacity: 0.5;
+}
 @media only screen and (min-width: 1000px) {
 	.wrapper{
 		width: 1000px;
