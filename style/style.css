@@ -184,7 +184,7 @@ header .header-projects {
 }
 .accordion-body p{
 	  font-family: Catamaran;
-		font-weight: 500;
+		font-weight: 600;
 		line-height: 30px;
 }
 .accordion-body dl{
@@ -210,9 +210,6 @@ header .header-projects {
 }
 .accordion-body{
 	height: auto;
-}
-.accordion-body p {
-	height: 100px;
 }
 }
 
