@@ -15,34 +15,6 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-  <script>
-  var w = $(window).width();
-  if ( w < 1000) {
-    console.log("window width less than 1000");
-    $(function() {
-        $( ".expand" ).accordion({
-          heightStyle:"content",
-          active: false,
-          collapsible: true,
-          header:"div.accordion-header"
-        });
-      });
-  }
-  $(window).resize(function() {
-        location.reload();
-});
-
-
-// $(function() {
-//     $( ".expand" ).accordion({
-//       heightStyle:"content",
-//       active: false,
-//       collapsible: true,
-//       header:"div.accordion-header"
-//     });
-//   });
-
-  </script>
 </head>
 <body>
   <header>
@@ -191,4 +163,5 @@
     </div>
 
 </body>
+<script src="js/script.js"></script>
 </html>
