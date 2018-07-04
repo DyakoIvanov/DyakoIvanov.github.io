@@ -322,4 +322,7 @@ footer ul li a{
 	  line-height: 30px;
 		text-transform: uppercase;
 	}
+	.footer-sm img{
+		padding-bottom: 20px;
+	}
 }
